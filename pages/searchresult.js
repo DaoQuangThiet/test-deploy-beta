@@ -126,18 +126,18 @@ const useStyles_pageShop = makeStyles(theme => ({
     categoryText: {
         marginLeft: "-15px",
     },
-    textTile:{
+    textTile: {
         color: "white",
-        fontFamily:"Merriweather",
-        fontSize:"50px",
-        fontWeight:700
-      },
-      titleText:{
+        fontFamily: "Merriweather",
+        fontSize: "50px",
+        fontWeight: 700
+    },
+    titleText: {
         color: "white",
-        fontFamily:"Muli",
-        fontWeight:400,
-        fontSize:"14px"
-      },
+        fontFamily: "Muli",
+        fontWeight: 400,
+        fontSize: "14px"
+    },
 }))
 
 export default function Shop(props) {

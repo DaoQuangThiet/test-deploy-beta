@@ -10,7 +10,7 @@ import arrow_down from '../assets/img/arrow_down.png';
 import { makeStyles } from "@material-ui/core";
 import Link from 'next/link';
 import CartIcon from "./cart/CartIcon";
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 import { useState } from "react";
 import { useLazyQuery } from "@apollo/client";
 import client from "../libs/apollo/ApolloClient";
@@ -24,7 +24,7 @@ export const PER_PAGE_REST = 12;
 const Item = () => { };
 const useStyle_searchHeader = makeStyles({
 
-    HeaderMidItem: {
+    jss6: {
         borderBottom: '1px solid #eee',
         paddingTop: 15,
         paddingBottom: 15,
@@ -165,7 +165,7 @@ const HeaderMid = (props) => {
     return (
         <>
             <AppProvider>
-                <div className={classes.HeaderMidItem}>
+                <div className={classes.jss6}>
                     <React.Fragment>
                         <Container maxWidth="lg">
                             <Box sx={{ flexGrow: 1 }}>
@@ -224,10 +224,10 @@ const HeaderMid = (props) => {
     );
 };
 
-HeaderMid.PropTypes = {
-    searchQuery: PropTypes.string,
-    setSearchQuery: PropTypes.func,
-    handleSearchForm: PropTypes.func
+HeaderMid.propTypes = {
+    searchQuery: propTypes.string,
+    setSearchQuery: propTypes.func,
+    handleSearchForm: propTypes.func
 }
 
 HeaderMid.defaultProps = {

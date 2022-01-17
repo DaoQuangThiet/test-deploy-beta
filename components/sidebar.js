@@ -19,7 +19,7 @@ const colorHover = '#40c6ff';
 const colorDefaul = '#666';
 
 const useStyle_HeaderTop = makeStyles({
-  headerTop: {
+  jss1: {
     padding: '10px',
     backgroundColor: '#f3f3f3',
   },
@@ -28,7 +28,7 @@ const useStyle_HeaderTop = makeStyles({
     padding: '0px',
     margin: '0px',
     '& li': {
-      color:"#999",
+      color: "#999",
       float: 'left',
       padding: '0px 10px',
       position: 'relative',
@@ -152,7 +152,7 @@ const useStyle_HeaderTop = makeStyles({
 const SideBarTop = () => {
   const classes = useStyle_HeaderTop()
   return (
-    <div className={classes.headerTop}>
+    <div className={classes.jss1}>
       <Container>
         <Grid container spacing={2} >
           <Grid item sx={{ display: { xs: 'none', sm: 'none', md: 'block' } }} md={6}>
